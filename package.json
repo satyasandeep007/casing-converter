@@ -1,0 +1,9 @@
+{
+  "name": "casing-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "satyasandeep",
+  "license": "ISC"
+}
