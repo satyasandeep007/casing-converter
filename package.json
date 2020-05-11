@@ -1,9 +1,26 @@
 {
   "name": "casing-converter",
   "version": "1.0.0",
-  "description": "",
+  "description": "casing-converter converts to required casings when provide a string.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satyasandeep007/casing-converter"
+  },
+  "homepage": "https://github.com/satyasandeep007/casing-converter",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "casing",
+    "pascal",
+    "camel",
+    "snake",
+    "kebab",
+    "string",
+    "casing-converter",
+    "camelCase",
+    "snake_case",
+    "kebab-case",
+    "PascalCase"
+  ],
   "author": "satyasandeep",
   "license": "ISC"
 }

@@ -1,4 +1,4 @@
-export const toCamelCase = (str) => {
+const toCamelCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         .map(x => x.toLowerCase())
@@ -8,7 +8,7 @@ export const toCamelCase = (str) => {
         .replace(/^(.)/, ($1) => { return $1.toLowerCase(); });
 };
 
-export const toPascalCase = (str) => {
+const toPascalCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         .map(x => x.toLowerCase()
@@ -16,7 +16,7 @@ export const toPascalCase = (str) => {
         .join("");
 };
 
-export const toSnakeCase = (str) => {
+const toSnakeCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         //    .map(x => x.toLowerCase())
@@ -24,10 +24,12 @@ export const toSnakeCase = (str) => {
         .join("_");
 };
 
-export const toKebabCase = (str) => {
+const toKebabCase = (str) => {
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
         //    .map(x => x.toLowerCase())
         //    .map(x => x.toUpperCase())
         .join("-");
 };
+
+module.exports = { toCamelCase, toPascalCase, toSnakeCase, toKebabCase };
