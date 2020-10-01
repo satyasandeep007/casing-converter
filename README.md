@@ -19,6 +19,7 @@ console.log(toCamelCase("My-name_is=satya+sandeep"));
 console.log(toPascalCase("My-name_is=satya+sandeep"));
 console.log(toSnakeCase("My-name_is=satya+sandeep"));
 console.log(toKebabCase("My-name_is=satya+sandeep"));
+console.log(toFlatCase("My-name_is=satya+sandeep"));
 
 /** 
  * Output :
@@ -27,7 +28,7 @@ console.log(toKebabCase("My-name_is=satya+sandeep"));
  * MyNameIsSatyaSandeep
  * My_name_is_satya_sandeep
  * My-name-is-satya-sandeep
- * 
+ * Mynameissatyasandeep
 */
 
 ```
