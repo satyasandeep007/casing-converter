@@ -33,7 +33,7 @@ if (flatCase === "mynameissatyasandeep") {
 } else {
     console.log("test case failed");
 }
-if (flatCase === "MynameIssatyasandeep") {
+if (inverseCase === "MynameIssatyasandeep") {
     console.log("test case passed");
 } else {
     console.log("test case failed");
